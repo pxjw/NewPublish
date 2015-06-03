@@ -12,8 +12,22 @@
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
+    <style>
+        body{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #eee;
+        }
+        .form-signup{
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="container">
+        <form class="form-signup"></form>
+    </div>
 </body>
 </html>
