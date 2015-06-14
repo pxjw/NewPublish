@@ -7,8 +7,18 @@ public class ArticleDTO {
     private int aid;
     private String aname;
     private String atype;
-    private String content;
+    private String acontent;
     private int uid;
+    private String atime;
+    private String uname;
+
+    public String getUname() {
+        return uname;
+    }
+
+    public void setUname(String uname) {
+        this.uname = uname;
+    }
 
     public int getAid() {
         return aid;
@@ -34,12 +44,12 @@ public class ArticleDTO {
         this.atype = atype;
     }
 
-    public String getContent() {
-        return content;
+    public String getAcontent() {
+        return acontent;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setAcontent(String acontent) {
+        this.acontent = acontent;
     }
 
     public int getUid() {
@@ -48,5 +58,13 @@ public class ArticleDTO {
 
     public void setUid(int uid) {
         this.uid = uid;
+    }
+
+    public String getAtime() {
+        return atime;
+    }
+
+    public void setAtime(String atime) {
+        this.atime = atime;
     }
 }

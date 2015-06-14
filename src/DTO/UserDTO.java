@@ -11,7 +11,7 @@ public class UserDTO {
     private String email;
     private String password;
     private String realname;
-    private String nickname;
+    private String uname;
 
     public int getUid() {
         return uid;
@@ -45,11 +45,11 @@ public class UserDTO {
         this.realname = realname;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getUname() {
+        return uname;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setUname(String uname) {
+        this.uname = uname;
     }
 }
