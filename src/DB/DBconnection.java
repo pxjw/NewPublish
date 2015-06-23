@@ -6,14 +6,14 @@ import java.sql.*;
  * Created by Pxjw on 2015/6/14.
  */
 public class DBconnection {
-    private String DriveString="com.mysql.jdbc.Driver";
-    private String UrlString="jdbc:mysql://localhost:3306/newspublish";
-    private String UserName="root";
-    private String PassWord="joy19940521";
+    private static String DriveString="com.mysql.jdbc.Driver";
+    private static String UrlString="jdbc:mysql://localhost:3306/newspublish";
+    private static String UserName="root";
+    private static String PassWord="joy19940521";
 
-    Connection connection=null;
+    static Connection connection=null;
 
-    public Connection getConnection(){
+    public static Connection getConnection(){
         try {
             Class.forName(DriveString);
         } catch (ClassNotFoundException e) {
@@ -27,7 +27,7 @@ public class DBconnection {
 
         return connection;
     }
-    public void close(Connection connection,PreparedStatement preparedStatement,ResultSet resultSet) throws SQLException {
+    public static void close(Connection connection,PreparedStatement preparedStatement,ResultSet resultSet) throws SQLException {
 
         if (connection!=null){
             connection.close();

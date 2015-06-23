@@ -16,16 +16,12 @@
 </head>
 <body>
     <div class="container">
-        <form class="form-signup" action="#">
+        <form class="form-signup" action="regcheck.jsp" method="post">
             <h2>欢迎注册</h2>
-            <label>Email：</label>
-            <input type="email" class="form-control">
+            <label>用户名(Email)</label>
+            <input type="text" name="uname" id="uname" class="form-control">
             <label>密码:</label>
-            <input type="password" class="form-control">
-            <label>真实姓名:</label>
-            <input type="text" class="form-control">
-            <label>昵称</label>
-            <input type="text" class="form-control">
+            <input type="password" name="password" id="password" class="form-control">
             <button class="btn btn-lg btn-primary" type="submit">注册</button>
             <button class="btn btn-lg btn-primary" type="reset">重置</button>
         </form>

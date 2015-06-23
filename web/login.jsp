@@ -17,12 +17,12 @@
 <body>
 <div class="container">
 
-  <form class="form-signin">
+  <form class="form-signin" onsubmit="">
     <h2 class="form-signin-heading">欢迎登录</h2>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <label for="uname" class="sr-only">Email address</label>
+    <input type="email" name="uname" id="uname" class="form-control" placeholder="Email address" required autofocus>
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
     <div class="checkbox">
       <label>
         <input type="checkbox" value="remember-me">记住密码

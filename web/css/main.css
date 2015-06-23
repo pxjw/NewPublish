@@ -3,3 +3,16 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.block-article{
+    width: 50%;
+    height: 10%;
+    float: left;
+    background-color: #2aabd2;
+}
+
+.cons-article{
+    background-color: #286090;
+    height: 10%;
+    width: 100%;
+}
